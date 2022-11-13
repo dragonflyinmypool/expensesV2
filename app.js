@@ -17,7 +17,7 @@ let db = new sqlite3.Database(
 
 // Create an express api which will return the data from the database
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 
